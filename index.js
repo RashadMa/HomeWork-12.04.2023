@@ -3,7 +3,7 @@
 function LetterCount(word) {
   return word.length;
 }
-// console.log(LetterCount("rashad"));
+// console.log(LetterCount("rashaad"));
 
 //#endregion
 
@@ -52,9 +52,22 @@ function GetFrequentLetterCount(text) {
   return maxChar;
 }
 
-console.log(
-  GetFrequentLetterCount(
-    "ssssaaaaaaaaassssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaa"
-  )
-);
+// console.log(
+//   GetFrequentLetterCount(
+//     "ssssaaaaaaaaassssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaa"
+//   )
+// );
+
+//#endregion
+
+//#region BetweenTwoDate
+
+function BetweenTwoDate(date1, date2) {
+  const dateDay = new Date(date1);
+  const dateDay2 = new Date(date2);
+  return dateDay.getDate() - dateDay2.getDate();
+}
+
+// console.log(BetweenTwoDate("2020-01-10", "2020-01-05"));
+
 //#endregion
